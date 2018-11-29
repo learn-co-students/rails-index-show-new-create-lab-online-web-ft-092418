@@ -1,0 +1,12 @@
+<h2>Index Page</h2>
+
+<% @coupons.each do |c| %>
+    <div><h4>---</h4>
+    <p>
+    <%= link_to c.coupon_code, coupon_path(c) %> <br>
+    <%= c.store %>
+    </p>
+
+    </div>
+<% end %>
+<h4>---</h4>
